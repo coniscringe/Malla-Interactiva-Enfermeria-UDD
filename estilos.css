@@ -1,1 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f6f2f9;
+  color: #2d3e3e;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #4a235a;
+  margin-bottom: 40px;
+}
+
+#malla {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.nivel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  min-width: 200px;
+}
+
+.nivel h2 {
+  background-color: #8e44ad; /* Morado */
+  color: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin: 0 0 10px 0;
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.fila {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.ramo {
+  background-color: #d2b4de; /* Fondo ramo morado claro */
+  border: 2px solid #7d3c98; /* Borde morado oscuro */
+  color: #4a235a;            /* Texto morado oscuro */
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0.5;
+  pointer-events: none;
+  transition: 0.2s;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.ramo.activo {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.ramo.aprobado {
+  background-color: #e8daef; /* Aprobado morado claro */
+  border-color: #633974;
+  text-decoration: line-through;
+  color: #666;
+}
+
+.ramo:hover {
+  transform: scale(1.03);
+}
 
